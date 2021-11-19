@@ -24,9 +24,9 @@
         <v-card-title>
           <v-col>
             <v-row justify="center">
-              <v-col cols="12" sm="6" md="3">
+              <v-col cols="12" sm="5">
                 <v-select
-                  style="max-width: 200px"
+                  style="width:220px"
                   outlined
                   hide-details
                   label="Status"
@@ -35,16 +35,17 @@
                 ></v-select>
               </v-col>
               <v-spacer />
-              <v-col cols="12" sm="6" md="3">
+              <v-col cols="12" sm="5" lg="2">
                 <v-row no-gutters>
-                  <v-col>
-                    <v-btn outlined @click="closeDialog" color="success"
-                      >Save</v-btn
-                    >
-                  </v-col>
-                  <v-col>
-                    <v-btn outlined @click="closeDialog">Close</v-btn>
-                  </v-col>
+                  <v-btn
+                    class="mr-2"
+                    outlined
+                    @click="closeDialog"
+                    color="success"
+                    >Save</v-btn
+                  >
+
+                  <v-btn outlined @click="closeDialog">Close</v-btn>
                 </v-row>
               </v-col>
             </v-row>
@@ -142,6 +143,12 @@
             </v-col>
           </v-row>
         </v-card-text>
+        <v-divider />
+        <v-col>
+          <v-row justify="center">
+            <h3>History</h3>
+          </v-row>
+        </v-col>
       </v-card>
     </v-dialog>
   </div>
